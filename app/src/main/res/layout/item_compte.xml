@@ -1,0 +1,85 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="6dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="@drawable/bg_gradient">
+
+        <!-- ID -->
+        <TextView
+            android:id="@+id/tvId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID: 1"
+            android:textColor="@android:color/white" />
+
+        <!-- Solde -->
+        <TextView
+            android:id="@+id/tvSolde"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Solde: 7113.18"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:layout_below="@id/tvId"
+            android:layout_marginTop="8dp" />
+
+        <!-- Type badge -->
+        <TextView
+            android:id="@+id/tvType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Type: COURANT"
+            android:padding="6dp"
+            android:background="@drawable/bg_chip"
+            android:textColor="@android:color/black"
+            android:layout_below="@id/tvSolde"
+            android:layout_marginTop="8dp" />
+
+        <!-- Date à droite, même ligne -->
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date: 2024-11-23"
+            android:textColor="@android:color/white"
+            android:layout_alignBaseline="@id/tvType"
+            android:layout_alignParentEnd="true" />
+
+        <!-- Bouton Edit -->
+        <Button
+            android:id="@+id/btnEdit"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Edit"
+            android:background="@drawable/bg_white_button"
+            android:layout_below="@id/tvType"
+            android:layout_marginTop="16dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="120dp"/>
+
+        <!-- Bouton Delete -->
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:textColor="@android:color/white"
+            android:background="@drawable/bg_red_button"
+            android:layout_below="@id/tvType"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="16dp"/>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
